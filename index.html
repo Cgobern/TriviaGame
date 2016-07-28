@@ -3,23 +3,89 @@
 <head>
 <meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 <title>TriviaGame</title>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" media="screen"/>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 </head>
 <body>
+<div class="container">
+	<h1>Trivia Game: State Capitals!</h1>
+<!-- <embed ></embed> -->
+		<div class="timeLeft">Time remaining: 60 seconds</div> <br>
+		<div class="question">1. What is the capital of North Carolina? <br>
+			<input type="radio" name="answer" value="English" id="wrongop"> English
+  			<input type="radio" name="answer" value="French" id="wrongop"> French
+  			<input type="radio" name="answer" value="Spanish" id="wrongop"> Spanish
+  			<input type="radio" name="answer" value="None" id="correctop"> None of the above 
+		</div><br>
+		<div class="question">2. How many time the word "democracy" is written in the Constitution? <br>
+			<input type="radio" name="answer1" value="20 times" id="wrongop1"> 20 times
+  			<input type="radio" name="answer1" value="10 times" id="wrongop1"> 10 times
+  			<input type="radio" name="answer1" value="5 times" id="wrongop1"> 5 times
+  			<input type="radio" name="answer1" value="none" id="correctop1"> None of the above
+		</div><br>
+		<!-- <div class="row hide">3. How old was Benjimin Franklin when he signed the <em>Constitution?</em> <br>
+			<input type="radio" name="answer2" value="81" id="correctop2"> 81
+  			<input type="radio" name="answer2" value="71" id="wrongop2"> 71
+  			<input type="radio" name="answer2" value="61" id="wrongop2"> 61
+  			<input type="radio" name="answer2" value="18" id="wrongop2"> 18
+		</div><br>
+		<div class="row hide">The US <em>Constitution</em> is the: <br>
+			<input type="radio" name="answer3" value="longest" id="wrongop"> longest governing document of any nation
+  			<input type="radio" name="answer3" value="shortest" id="correctop3"> shortest governing document of any nation
+  			<input type="radio" name="answer3" value="tied" id="wrongop"> it is tied with two other nations
+  			<input type="radio" name="answer3" value="none" id="wrongop"> None of the above
+		</div><br>
+		<div class="row hide">George Washington declared "Thanks Giving Day" the: <br>
+			<input type="radio" name="answer4" value="Nov12" id="wrongop"> November 12, 1790
+  			<input type="radio" name="answer4" value="Nov20" id="wrongop"> November 20, 1789
+  			<input type="radio" name="answer4" value="Nov26" id="correctop4"> November 26, 1789
+  			<input type="radio" name="answer4" value="Nov25" id="wrongop"> November 25, 2016
+		</div><br>
+		<div class="row hide">In 1789 the <em>Constitution</em> was send to 13 States witch only: <br>
+			<input type="radio" name="answer6" value="8" id="wrongop"> 8 ratified 
+  			<input type="radio" name="answer6" value="3" id="wrongop"> 3 ratified
+  			<input type="radio" name="answer6" value="12" id="wrongop"> 12 ratified
+  			<input type="radio" name="answer6" value="9" id="correctop5"> 9 ratified 
+		</div><br>
+		<div class="row hide">What kind of material the <em>Constitution</em>was made of? <br>
+			<input type="radio" name="answer7" value="hemp" id="wrongop"> Hemp fiber
+  			<input type="radio" name="answer7" value="parchent" id="correctop6"> Parchment fiber
+  			<input type="radio" name="answer7" value="etching" id="wrongop"> Etching paper
+  			<input type="radio" name="answer7" value="rice" id="worngop"> Rice paper
+		</div><br>
+		<div class="row hide">How many time the <em>Constitution</em> has been changed?<br>
+			<input type="radio" name="answer8" value="2 times" id="wrongop"> 2 times
+  			<input type="radio" name="answer8" value="10 times" id="wrongop"> 10 times
+  			<input type="radio" name="answer8" value="14 times" id="wrongop"> 14 times
+  			<input type="radio" name="answer8" value="27 times" id="correctop7"> 27 times
+		</div><br>
+ -->
 
 
 
 
+
+
+
+<button type="button" class="btn btn-primary btn-lg start">Start the trivia!</button>
+<button type="button" class="btn btn-primary btn-lg done">Done!</button>
+		<div id= "endGame">
+			<div class="allDone"><h2>All Done!!!</h2></div>
+			<div class="unanswered">Unanswered: 0</div>
+			<div class="incorrect">Incorrect answers: 0</div>
+			<div class="correct">Correct answers: 0</div>
+		</div>
+</div>
 <!-- jQuery 2.2.4 -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="jquery-3.1.0.min.js"></script>
 <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <!-- Local javascript operations file -->
-<script src= "assets/javascript/game.js"></script>
+<script type="text/javascript" src= "assets/javascript/app.js"></script>
 </body>
 </html>

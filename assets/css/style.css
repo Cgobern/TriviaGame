@@ -1,5 +1,90 @@
-body {
+body,
+html{
+	min-height: 100%;
+}
+
+body{
+	background-image: url("../images/background.jpg") center;
+	background-repeat: no-repeat;
+	/*-webkit-background-size: cover;
+ 	 -moz-background-size: cover;
+ 	 -o-background-size: cover;*/
+  	background-size: cover;
+  	width: auto;
+  	height: auto;
+}
+
+.container {
+	margin:100px auto!important;
+	background: white;
+	opacity: 0.8;
+	text-align: center;
+	padding: 100px 100px;
+}
+
+.timeLeft {
+	margin-top: 55px !important;
+	font-size: 30px !important; 
+	color: black;
+}
+.question {
+	font-size: 20px !important;
+	color: black!important;
+}
+
+#endGame{
+	margin: -60px;
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width: 1028px){
+	body {
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+}
+
+@media (min-width: 768px) {
+	body {
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+}
+
+@media (min-width: 568px) {
+	body {
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+}
+
+@media (min-width: 368px) {
+	body {
+	background-image: url("../images/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+
+}
+@media (min-width: 268px){
+	body {
 	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
 	background-size: 100%;
+	}
+	
 }
