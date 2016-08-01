@@ -1,12 +1,11 @@
 $(document).ready(function() {
-var correctAnswers= ["Raleigh", "Honolulu", "Tallahassee", "Austin", "Washington D.C.", "Richmond", "Harrisburg", "Sacramento", "Boston", "Denver"];
-var incorrectAnswers=0;		
+		
 //this hides all the classes below until 'start' button is pushed
 	$(".timeLeft").hide();
 	$("#panel").hide();
 	$(".done").hide();
 	$("#endGame").hide();
-//this will show the classes below until 'start' button is pushed
+//this will shows the classes below until 'start' button is pushed
 		$('.start').on ('click', function() {
 		$(".timeLeft").show();
 		$(".done").show();
@@ -42,7 +41,13 @@ var incorrectAnswers=0;
 	  	});
   	});		
   	//this is checking each answer the user selected and sending it back
-  	
+  // 	$('.done').click(function((input:radio).click(function(){
+  // 		var correctAnswers= ["Raleigh", "Honolulu", "Tallahassee", 
+  // 		"Austin", "Washington D.C.", "Richmond", "Harrisburg", 
+  // 		"Sacramento", "Boston", "Denver"];
+		// var incorrectAnswers=0;
+  		
+  	//});
 
   	// $.each($(input[name='answer']:"checked"), function() {
 
