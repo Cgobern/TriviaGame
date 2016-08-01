@@ -39,7 +39,12 @@ $(document).ready(function() {
 	  	//come back and make this timer stop when time runs out 
 	  	//not just when you click the 'done' button
 	  	});
-  	});		
+  	});	
+  	// var correctAnswers= ["Raleigh", "Honolulu", "Tallahassee", 
+  	// 	"Austin", "Washington D.C.", "Richmond", "Harrisburg", 
+  	// 	"Sacramento", "Boston", "Denver"];
+	
+
   	//this is checking each answer the user selected and sending it back
   // 	$('.done').click(function((input:radio).click(function(){
   // 		var correctAnswers= ["Raleigh", "Honolulu", "Tallahassee", 
@@ -75,4 +80,3 @@ $(document).ready(function() {
 
 
 	// ]
-

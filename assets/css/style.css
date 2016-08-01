@@ -1,18 +1,12 @@
-body,
-html{
-	min-height: 100%;
-}
-
 body{
-	background-image: url("../images/background.jpg") center;
+	background-image: url("../images/background.jpg");
 	background-repeat: no-repeat;
-	/*-webkit-background-size: cover;
- 	 -moz-background-size: cover;
- 	 -o-background-size: cover;*/
   	background-size: cover;
   	width: auto;
   	height: auto;
 }
+
+
 
 .container {
 	margin:100px auto;
@@ -23,13 +17,13 @@ body{
 }
 
 .timeLeft {
-	margin-top: 55px !important;
-	font-size: 30px !important; 
+	margin-top: 55px;
+	font-size: 30px; 
 	color: black;
 }
 .question {
-	font-size: 20px !important;
-	color: black!important;
+	font-size: 20px;
+	color: black;
 }
 
 #endGame{
